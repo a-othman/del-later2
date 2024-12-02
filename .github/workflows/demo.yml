@@ -38,6 +38,8 @@ jobs:
     steps:
       - name: download artifact
         uses: actions/download-artifact@v4
+        with:
+          name: dist-files
       - name: list content
         run: ls
       - name: Deploy
